@@ -8,7 +8,7 @@ import Contact from './pages/Contact'
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/minimal-portfolio">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
