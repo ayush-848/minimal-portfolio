@@ -14,10 +14,20 @@ const PageWrapper = ({ children }) => {
         <div className="w-4 h-4 bg-[#FFF9DB] border-2 border-black rounded-full shadow-[1px_1px_0px_black]" />
       </div>
 
+      {/* Spiral Rings (Left side) */}
+      <div className="absolute top-[80px] left-[calc(50%-320px)] flex flex-col gap-3 z-10">
+        {Array.from({ length: 7 }).map((_, i) => (
+          <div key={i} className="w-3 h-3 border-2 border-black rounded-full bg-gray-300 shadow-[1px_1px_0px_black]" />
+        ))}
+      </div>
+
       {/* Notepad Body */}
       <div className="relative w-full max-w-3xl bg-[#FEFEFE] border-[3px] border-black rounded-[1.5rem] shadow-[10px_10px_0px_#000] p-8
         bg-[linear-gradient(to_right,#0000000a_1px,transparent_1px),linear-gradient(to_bottom,#0000000a_1px,transparent_1px)]
         bg-[size:26px_26px]">
+
+        {/* Red Margin Line */}
+        <div className="absolute top-0 left-[50px] bottom-0 w-[2px] bg-red-400 opacity-30 z-0" />
 
         {/* Curl */}
         <div className="absolute bottom-0 right-0 w-10 h-10 bg-[#FFF9DB] border-t-[3px] border-l-[3px] border-black rounded-tl-full shadow-[-4px_-4px_0px_#000]" />
