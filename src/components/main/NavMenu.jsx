@@ -17,7 +17,7 @@ export default function NavMenu() {
   ]
 
   return (
-    <div className="fixed top-6 left-0 z-50 w-full">
+    <div className="top-6 left-0 z-50 w-full">
       <Menubar className="mx-auto w-max gap-4 rounded-xl border border-black px-4 py-2 shadow-[5px_5px_0px_black]">
         {menuItems.map((item) => {
           const isActive = location.pathname === item.path

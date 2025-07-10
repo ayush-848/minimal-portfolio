@@ -27,12 +27,12 @@ const projects = [
     link: "https://example.com/project4",
     tags: ["Vanilla JS", "CSS", "UX Design"],
   },
+  
 ];
 
 const Projects = () => {
   return (
     <div className="relative bg-[#FFF9DB] dark:bg-[#20294B] min-h-screen">
-      <NavMenu />
 
       <PageWrapper>
         <div className="text-center">

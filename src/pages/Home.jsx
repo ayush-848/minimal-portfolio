@@ -10,41 +10,41 @@ const Home = () => {
 
   return (
     <div className="relative bg-[#FFF9DB] dark:bg-[#20294B] min-h-screen">
-      <NavMenu />
+      
 
       <PageWrapper>
-        <main className="flex flex-col items-center justify-center text-center gap-6">
+        <main className="flex flex-col items-center justify-center text-center gap-6 px-4 py-8">
           {/* Profile Image */}
           <img
             src={avatarUrl}
             alt="Ayush Deb"
-            className="w-32 h-32 rounded-full border-2 border-border shadow-md"
+            className="w-32 h-32 rounded-full border-2 border-border shadow-[3px_3px_0px_black]"
           />
 
           {/* Name */}
-          <h1 className="text-4xl sm:text-5xl font-bold text-main-foreground">
+          <h1 className="text-4xl sm:text-5xl font-bold text-main-foreground tracking-wide">
             Ayush Deb
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-main-foreground/80 max-w-md">
+          {/* Tagline */}
+          <p className="text-lg sm:text-xl text-main-foreground/80 max-w-md font-medium">
             Full-stack Developer
           </p>
-          <p className="text-base sm:text-sm text-main-foreground/80 max-w-md">
+          <p className="text-sm sm:text-base text-main-foreground/70 max-w-md italic">
             If it’s broken, I probably deployed it. Fixing now…
           </p>
 
           {/* Buttons */}
-          <div className="flex gap-4 mt-2">
+          <div className="flex gap-4 mt-4 flex-wrap justify-center">
             <a
               href="/minimal-portfolio/projects"
-              className="bg-main text-main-foreground border border-black px-5 py-2 rounded-md shadow-[3px_3px_0px_black] hover:brightness-95 transition"
+              className="bg-main text-main-foreground border border-black px-5 py-2 rounded-md shadow-[3px_3px_0px_black] hover:brightness-95 transition-all"
             >
               View Projects
             </a>
             <a
               href="/minimal-portfolio/resume"
-              className="bg-transparent text-main-foreground border border-black px-5 py-2 rounded-md shadow-[3px_3px_0px_black] hover:bg-main transition"
+              className="bg-transparent text-main-foreground border border-black px-5 py-2 rounded-md shadow-[3px_3px_0px_black] hover:bg-main transition-all"
             >
               View Resume
             </a>
@@ -56,6 +56,7 @@ const Home = () => {
               href="https://github.com/ayushdeb"
               target="_blank"
               rel="noreferrer"
+              className="hover:scale-110 transition-transform"
             >
               <FaGithub />
             </a>
@@ -63,10 +64,14 @@ const Home = () => {
               href="https://linkedin.com/in/ayushdeb"
               target="_blank"
               rel="noreferrer"
+              className="hover:scale-110 transition-transform"
             >
               <FaLinkedin />
             </a>
-            <a href="mailto:hello@ayushdeb.com">
+            <a
+              href="mailto:hello@ayushdeb.com"
+              className="hover:scale-110 transition-transform"
+            >
               <FaEnvelope />
             </a>
           </div>
