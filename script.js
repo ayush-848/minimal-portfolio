@@ -25,12 +25,12 @@
       links: { live: "https://task-tracker-ivory-psi.vercel.app/", github: "https://github.com/ayush-848/TaskTracker" }
     },
     {
-      title: "E-Commerce API",
+      title: "SnipBucket",
       status: "Live",
       year: 2023,
-      description: "Backend API for e-commerce platform with authentication, cart logic, orders, and payment integration.",
-      techStack: ["Node.js", "Express", "PostgreSQL", "JWT"],
-      links: { live: "#", github: "#" }
+      description: "SnipBucket is a sleek code-sharing platform for creating, editing, and sharing syntax-highlighted snippets with AI-generated titles and secure user access.",
+      techStack: ["React", "Tailwind CSS", "MongoDB","Firebase", "Node.js", "Express.js", "Gemini API"],
+      links: { live: "https://snip-bucket.vercel.app/", github: "https://github.com/ayush-848/SnipBucket" }
     }
   ];
 
@@ -82,8 +82,6 @@
     Backend: [
       { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
       { name: "Express", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", whiteBg: true },
-      { name: "Flask", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg", whiteBg: true },
-      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
       { name: "JWT", icon: "https://jwt.io/img/pic_logo.svg" }
     ],
     "Database & Tools": [
