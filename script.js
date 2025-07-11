@@ -26,8 +26,8 @@
     },
     {
       title: "SnipBucket",
-      status: "Live",
-      year: 2023,
+      status: "In Progress",
+      year: 2024,
       description: "SnipBucket is a sleek code-sharing platform for creating, editing, and sharing syntax-highlighted snippets with AI-generated titles and secure user access.",
       techStack: ["React", "Tailwind CSS", "MongoDB","Firebase", "Node.js", "Express.js", "Gemini API"],
       links: { live: "https://snip-bucket.vercel.app/", github: "https://github.com/ayush-848/SnipBucket" }
