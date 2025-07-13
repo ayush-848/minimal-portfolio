@@ -90,6 +90,7 @@
       { name: "Tailwind CSS", icon: "https://tailwindcss.com/favicons/apple-touch-icon.png" },
       { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
       { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Vue", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
       { name: "ShadCN UI", icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4" }
     ],
     Backend: [
@@ -98,6 +99,7 @@
       { name: "JWT", icon: "https://jwt.io/img/pic_logo.svg" }
     ],
     "Database & Tools": [
+      { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
       { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
       { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
       { name: "Supabase", icon: "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" },
