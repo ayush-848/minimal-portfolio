@@ -24,6 +24,18 @@
       techStack: ["React", "Tailwind CSS","MongoDB","JWT", "Node.js", "Express.js"],
       links: { live: "https://task-tracker-ivory-psi.vercel.app/", github: "https://github.com/ayush-848/TaskTracker" }
     },
+        {
+  title: "MyDay",
+  status: "In Progress",
+  year: 2024,
+  description: "MyDay is a personal blogging and journaling platform that lets users write, edit, and manage their own posts with full authentication, changelog history, newsletter updates, and a beautiful Vue-powered UI.",
+  techStack: ["Vue", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS", "Nodemailer"],
+  links: {
+    live: "https://my-day-zeta.vercel.app/",
+    github: "https://github.com/ayush-848/My-Day"
+  }
+},
+
     {
       title: "SnipBucket",
       status: "In Progress",
@@ -31,7 +43,8 @@
       description: "SnipBucket is a sleek code-sharing platform for creating, editing, and sharing syntax-highlighted snippets with AI-generated titles and secure user access.",
       techStack: ["React", "Tailwind CSS", "MongoDB","Firebase", "Node.js", "Express.js", "Gemini API"],
       links: { live: "https://snip-bucket.vercel.app/", github: "https://github.com/ayush-848/SnipBucket" }
-    }
+    },
+
   ];
 
   const container = document.getElementById('project-list');
