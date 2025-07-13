@@ -87,10 +87,10 @@
     Frontend: [
       { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
       { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-      { name: "Tailwind CSS", icon: "https://tailwindcss.com/favicons/apple-touch-icon.png" },
       { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
       { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
       { name: "Vue", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" },
+      { name: "Tailwind CSS", icon: "https://tailwindcss.com/favicons/apple-touch-icon.png" },
       { name: "ShadCN UI", icon: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4" }
     ],
     Backend: [
