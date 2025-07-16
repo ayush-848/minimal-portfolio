@@ -2,7 +2,7 @@
   const projects = [
     {
       title: "DocVault",
-      status: "Live",
+      status: "Completed",
       year: 2025,
       description: "DocVault is a secure and modern platform for uploading, previewing, and managing PDF documents with real-time storage insights and user-friendly controls.",
       techStack: ["React","ShadCN UI","PostgreSQL","Supabase","JWT", "Node.js","Express.js"],
@@ -10,23 +10,23 @@
     },
     {
       title: "Imaginate",
-      status: "Live",
-      year: 2024,
+      status: "Completed",
+      year: 2025,
       description: "Imaginate is an intuitive AI-powered text-to-image tool that lets users generate images from prompts, download results, and view their prompt history",
-      techStack: ["React", "Tailwind CSS", "MongoDB", "Node.js", "Express.js", "Clipdrop API"],
+      techStack: ["React", "Tailwind CSS", "MongoDB", "Node.js", "Express.js","JWT", "Clipdrop API"],
       links: { live: "https://imaginate-beta.vercel.app/", github: "https://github.com/ayush-848/Imaginate" }
     },
     {
       title: "TaskTracker",
       status: "In Progress",
-      year: 2024,
+      year: 2025,
       description: "TaskTracker is a sleek and intuitive task management app for creating, organizing, and tracking tasks with due dates, priorities, categories, and subtasks—all in one place.",
       techStack: ["React", "Tailwind CSS","MongoDB","JWT", "Node.js", "Express.js"],
       links: { live: "https://task-tracker-ivory-psi.vercel.app/", github: "https://github.com/ayush-848/TaskTracker" }
     },
         {
   title: "MyDay",
-  status: "In Progress",
+  status: "Completed",
   year: 2024,
   description: "MyDay is a personal blogging and journaling platform that lets users write, edit, and manage their own posts with full authentication, changelog history, newsletter updates, and a beautiful Vue-powered UI.",
   techStack: ["Vue", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS", "Nodemailer"],
@@ -41,7 +41,7 @@
       status: "In Progress",
       year: 2024,
       description: "SnipBucket is a sleek code-sharing platform for creating, editing, and sharing syntax-highlighted snippets with AI-generated titles and secure user access.",
-      techStack: ["React", "Tailwind CSS", "MongoDB","Firebase", "Node.js", "Express.js", "Gemini API"],
+      techStack: ["React", "Tailwind CSS", "MongoDB","Firebase", "Node.js", "Express.js","JWT", "Gemini API"],
       links: { live: "https://snip-bucket.vercel.app/", github: "https://github.com/ayush-848/SnipBucket" }
     },
 
@@ -56,7 +56,7 @@
     const yearBadge = `<span class="text-xs bg-purple-500/20 text-gray-300 px-2 py-1 rounded border border-gray-600/30">${project.year}</span>`;
 
     let statusColor = "bg-gray-700/50 text-gray-300 border-gray-600/30";
-    if (project.status === "Live") statusColor = "bg-green-500/10 text-green-300 border-green-500/20";
+    if (project.status === "Completed") statusColor = "bg-green-500/10 text-green-300 border-green-500/20";
     else if (project.status === "In Progress") statusColor = "bg-yellow-500/10 text-yellow-300 border-yellow-500/20";
 
     const statusBadge = `<span class="text-xs ${statusColor} px-2 py-1 rounded">${project.status}</span>`;
@@ -104,7 +104,13 @@
       { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
       { name: "Supabase", icon: "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" },
       { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-      { name: "REST API", icon: "https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/rest-api-icon.png" }
+      { name: "Vercel", icon: "https://assets.vercel.com/image/upload/v1672323719/front/favicon/vercel/57x57.png" },
+      
+  { name: "GitHub", icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMGMtNi42MjYgMC0xMiA1LjM3My0xMiAxMiAwIDUuMzAyIDMuNDM4IDkuOCA4LjIwNyAxMS4zODcuNTk5LjExMS43OTMtLjI2MS43OTMtLjU3N3YtMi4yMzRjLTMuMzM4LjcyNi00LjAzMy0xLjQxNi00LjAzMy0xLjQxNi0uNTQ2LTEuMzg3LTEuMzMzLTEuNzU2LTEuMzMzLTEuNzU2LTEuMDg5LS43NDUuMDgzLS43MjkuMDgzLS43MjkgMS4yMDUuMDg0IDEuODM5IDEuMjM3IDEuODM5IDEuMjM3IDEuMDcgMS44MzQgMi44MDcgMS4zMDQgMy40OTIuOTk3LjEwNy0uNzc1LjQxOC0xLjMwNS43NjItMS42MDQtMi42NjUtLjMwNS01LjQ2Ny0xLjMzNC01LjQ2Ny01LjkzMSAwLTEuMzExLjQ2OS0yLjM4MSAxLjIzNi0zLjIyMS0uMTI0LS4zMDMtLjUzNS0xLjUyNC4xMTctMy4xNzYgMCAwIDEuMDA4LS4zMjIgMy4zMDEgMS4yMy45NTctLjI2NiAxLjk4My0uMzk5IDMuMDAzLS40MDQgMS4wMi4wMDUgMi4wNDcuMTM4IDMuMDA2LjQwNCAyLjI5MS0xLjU1MiAzLjI5Ny0xLjIzIDMuMjk3LTEuMjMuNjUzIDEuNjUzLjI0MiAyLjg3NC4xMTggMy4xNzYuNzcuODQgMS4yMzUgMS45MTEgMS4yMzUgMy4yMjEgMCA0LjYwOS0yLjgwNyA1LjYyNC01LjQ3OSA1LjkyMS40My4zNzIuODIzIDEuMTAyLjgyMyAyLjIyMnYzLjI5M2MwIC4zMTkuMTkyLjY5NC44MDEuNTc2IDQuNzY1LTEuNTg5IDguMTk5LTYuMDg2IDguMTk5LTExLjM4NiAwLTYuNjI3LTUuMzczLTEyLTEyLTEyeiIvPjwvc3ZnPg==" },
+  { name: "Replit", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/replit/replit-original.svg" },
+  { name: "CodePen", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codepen/codepen-original.svg" },
+  {name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
+
     ]
   };
 
